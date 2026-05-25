@@ -19,5 +19,8 @@
   "main": "vite.config.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "optionalDependencies": {
+    "@esbuild/linux-x64": "^0.28.0"
+  }
 }

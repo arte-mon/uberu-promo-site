@@ -1,1 +1,30 @@
-(js/script.js is just a source file, no build artifacts, dependencies, or temp files in the changes)
+```
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+target/
+
+# Vite specific
+.vite/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment variables
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+```
