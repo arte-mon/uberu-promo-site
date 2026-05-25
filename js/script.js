@@ -13,17 +13,29 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.ticker.lagSmoothing(0);
 
   const path = document.getElementById("stroke-path");
-  const pathLength = path.getTotalLength();
-  path.style.strokeDasharray = pathLength;
-  path.style.strokeDashoffset = pathLength;
-  gsap.to(path, {
-    strokeDashoffset: 0,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".spotlight",
-      start: "top top",
-      end: "bottom bottom",
-      scrub: true,
-    },
+
+  ScrollTrigger.create({
+    trigger: ".spotlight",
+    start: "top top",
+    end: "bottom bottom",
+    onEnter: () => initPathAnimation(),
+    onRefresh: () => initPathAnimation(),
   });
+
+  function initPathAnimation() {
+    const pathLength = path.getTotalLength();
+    path.style.strokeDasharray = pathLength;
+    path.style.strokeDashoffset = pathLength;
+
+    gsap.to(path, {
+      strokeDashoffset: 0,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".spotlight",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+      },
+    });
+  }
 });
