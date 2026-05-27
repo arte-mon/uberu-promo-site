@@ -1,0 +1,33 @@
+[33m6af2470[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m update
+[33m353f79c[m update
+[33m5b62357[m Merge branch 'main' of github.com:arte-mon/uberu-promo-site
+[33m382e8e8[m update
+[33me9b2fa9[m update
+[33m734cd30[m update
+[33m118c70e[m Merge pull request #10 from arte-mon/визуальный-эффект-для-div-df2be
+[33m3a20043[m Add hero image scroll animation with CSS positioning and GSAP timeline
+[33ma45b716[m update
+[33m6b22855[m update
+[33m5f8fcd6[m update
+[33m7dca2bd[m update
+[33m777f0ef[m update
+[33m1bb73d2[m Merge pull request #9 from arte-mon/подключение-модулей-из-node_modules-725ea
+[33m499b0a2[m Update CDN links to work with VPN access
+[33m4380e4e[m Merge pull request #8 from arte-mon/подключение-модулей-из-node_modules-725ea
+[33m5787c21[m update branch
+[33m8870950[m Merge pull request #7 from arte-mon/подключение-модулей-из-node_modules-725ea
+[33mae9d34b[m update branch
+[33m15de18d[m Merge pull request #6 from arte-mon/подключение-модулей-из-node_modules-725ea
+[33mcaabbf5[m update branch
+[33m9905bfa[m Merge pull request #5 from arte-mon/подключение-модулей-из-node_modules-725ea
+[33m7ae7d33[m update branch
+[33mdd58566[m Merge pull request #4 from arte-mon/подключение-модулей-из-node_modules-725ea
+[33m3dec706[m Title: Switch module imports from CDN URLs to local node_modules paths
+[33m05ccf2b[m Merge pull request #3 from arte-mon/github-pages-styling-issue-a5e78
+[33m70b9b7a[m update branch
+[33m13e366a[m Merge pull request #2 from arte-mon/github-pages-styling-issue-a5e78
+[33m9a9e4c8[m update branch
+[33m3eaaa82[m fix line
+[33ma8afcf3[m Fix scroll-triggered path animation for GitHub Pages deployment
+[33m1bef5dc[m update
+[33m7fcf43d[m init commit
