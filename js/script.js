@@ -89,4 +89,20 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   }
+
+  // Анимация появления карточек при скролле
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((card) => {
+    gsap.from(card, {
+      opacity: 0,
+      y: 60,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: card,
+        start: "top 85%",
+        toggleActions: "play none none reverse",
+      },
+    });
+  });
 });
