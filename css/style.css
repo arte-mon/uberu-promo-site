@@ -20,16 +20,6 @@
   --text-style: clamp(12px, 2vw, 14px);
 }
 
-@font-face {
-  font-family: "Averta", sans-serif;
-  src:
-    url(../fonts/AvertaCyrillic/AvertaCyrillicRegular.otf) format("opentype"),
-    url(../fonts/AvertaCyrillic/AvertaCyrillicSemiBold.otf) format("opentype"),
-    url(../fonts/AvertaCyrillic/AvertaCyrillicBold.otf) format("opentype"),
-    url(../fonts/AvertaCyrillic/AvertaCyrillicExtraBold.otf) format("opentype"),
-    url(../fonts/AvertaCyrillic/AvertaCyrillicBlack.otf) format("opentype");
-}
-
 /*  */
 /* ОБЩИЕ */
 html {
@@ -83,7 +73,7 @@ button {
 }
 
 .descr-title {
-  font-family: "Averta", sans-serif;
+  font-family: "Unbounded", serif;
   font-weight: 600;
   text-transform: uppercase;
   font-size: var(--h2-font-size);
@@ -97,7 +87,7 @@ button {
 }
 
 body {
-  font-family: "Averta", sans-serif;
+  font-family: "Unbounded", sans-serif;
   font-weight: 400;
   font-size: var(--text-style);
   line-height: 1.4;
@@ -143,26 +133,6 @@ h3 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-}
-
-.hero-img-wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30%;
-  z-index: 10;
-  will-change: transform, y;
-}
-
-.hero-img-wrapper .img {
-  width: 100%;
-}
-
-@media (max-width: 1000px) {
-  .hero-img-wrapper {
-    width: 50%;
-  }
 }
 
 .hero h1,
