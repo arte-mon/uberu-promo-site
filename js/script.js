@@ -1,6 +1,6 @@
-import gsap from "./libs/gsap.js";
-import ScrollTrigger from "./libs/ScrollTrigger.js";
-import Lenis from "./libs/lenis.mjs";
+import gsap from "https://cdn.jsdelivr.net/npm/gsap@3.12.5/+esm";
+import ScrollTrigger from "https://cdn.jsdelivr.net/npm/gsap@3.12.5/+esm/ScrollTrigger";
+import Lenis from "https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/+esm";
 
 gsap.registerPlugin(ScrollTrigger);
 
