@@ -1,5 +1,17 @@
-(js/script.js is a source file, no build artifacts, dependencies, or temp files in the changes, so no ignores needed)
+```
+# Dependencies
+node_modules/
 
-```javascript
+# Logs and temp files
+*.log
+*.tmp
 
+# Environment
+.env
+.env.local
+.env.
+
+# Editors
+.vscode/
+.idea/
 ```
