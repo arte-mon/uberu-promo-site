@@ -177,6 +177,87 @@ h3 {
   overflow: hidden;
 }
 
+/* Фоновые декоративные элементы - не влияют на верстку */
+.bg-decoration {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.bg-decoration img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Позиционирование фоновых облаков и элементов */
+.bg-cloud-1 {
+  top: 10%;
+  left: 5%;
+  width: 150px;
+}
+
+.bg-cloud-2 {
+  top: 30%;
+  right: 10%;
+  width: 120px;
+}
+
+.bg-hero-illustration {
+  top: 5%;
+  right: 15%;
+  width: 300px;
+  opacity: 0.4;
+}
+
+.bg-trumper-shape {
+  bottom: 40%;
+  left: 8%;
+  width: 100px;
+}
+
+.bg-cloud-4 {
+  bottom: 20%;
+  right: 5%;
+  width: 140px;
+}
+
+/* Декоративные элементы рядом с изображениями людей */
+.decoration {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.decoration img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Clock 2 рядом с second.png */
+.img-second-wrapper {
+  position: relative;
+}
+
+.decoration-clock {
+  top: -20px;
+  right: -30px;
+  width: 80px;
+}
+
+/* Joystick 1 рядом с gamer.png */
+.img-gamer-wrapper {
+  position: relative;
+}
+
+.decoration-joystick {
+  bottom: -10px;
+  left: -40px;
+  width: 100px;
+}
+
 .spotlight .row {
   display: flex;
   justify-content: center;
