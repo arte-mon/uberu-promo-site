@@ -1,6 +1,6 @@
-import gsap from "https://cdn.skypack.dev/gsap";
-import ScrollTrigger from "https://cdn.skypack.dev/gsap/ScrollTrigger";
-import Lenis from "https://cdn.skypack.dev/lenis";
+import gsap from "https://cdn.skypack.dev/gsap@3.15.0";
+import ScrollTrigger from "https://cdn.skypack.dev/gsap@3.15.0/ScrollTrigger";
+import Lenis from "https://cdn.jsdelivr.net/npm/lenis@1.3.23/dist/lenis.mjs";
 
 gsap.registerPlugin(ScrollTrigger);
 
