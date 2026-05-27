@@ -144,6 +144,8 @@ h3 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: var(--app-green);
+  color: var(--app-white);
 }
 
 .hero h1,
@@ -220,8 +222,44 @@ h3 {
 .spotlight .svg-path svg {
   width: 100%;
   height: auto;
+  /* z-index: -1; */
 }
 
+.outro-container {
+  width: 100%;
+  position: relative;
+}
+
+.outro-img-1 {
+  width: 100%;
+  position: absolute;
+  top: -30svh;
+  left: 0;
+  z-index: 3;
+}
+
+.outro-img-2 {
+  width: 100%;
+  position: absolute;
+  top: -35svh;
+  left: 0;
+  z-index: 2;
+}
+
+.outro-img-3 {
+  width: 100%;
+  position: absolute;
+  top: -55svh;
+  left: 0;
+  z-index: 1;
+}
+
+.outro-img-1 {
+  width: 100%;
+  position: absolute;
+  top: -30svh;
+  left: 0;
+}
 @media (max-width: 1000px) {
   h1,
   h2,
