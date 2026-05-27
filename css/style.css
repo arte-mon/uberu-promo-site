@@ -308,3 +308,49 @@ h3 {
   background-color: var(--app-green);
   color: var(--app-white);
 }
+
+.outro-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.outro-logo {
+  max-width: 200px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.outro-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.qr-code {
+  width: 200px;
+  height: 200px;
+  filter: brightness(0) invert(1);
+}
+
+.qr-text {
+  color: var(--app-white);
+  font-size: var(--text-style);
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .outro-footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .outro-logo,
+  .qr-code {
+    max-width: 150px;
+  }
+}
