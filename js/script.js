@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.ticker.lagSmoothing(0);
 
   const path = document.getElementById("stroke-path");
+  const heroImgWrapper = document.querySelector(".hero-img-wrapper");
 
   ScrollTrigger.create({
     trigger: ".spotlight",
@@ -35,6 +36,56 @@ document.addEventListener("DOMContentLoaded", () => {
         start: "top top",
         end: "bottom bottom",
         scrub: true,
+      },
+    });
+  }
+
+  // Анимация изображения героя: перемещение из hero в spotlight
+  if (heroImgWrapper) {
+    const svgPathElement = document.querySelector(".svg-path");
+
+    // Позиция остановки - верхняя точка SVG пути (где начинается отрисовка линии)
+    const targetTop = svgPathElement
+      ? svgPathElement.offsetTop + 20 // +20px отступ сверху SVG контейнера
+      : window.innerHeight * 0.2;
+
+    // Начальная позиция картинки (внизу hero секции)
+    const initialRect = heroImgWrapper.getBoundingClientRect();
+    const initialTop = initialRect.top + window.scrollY;
+
+    // Вычисляем расстояние для анимации
+    const distanceToTravel = targetTop - initialTop;
+
+    // Создаем timeline для плавного перехода
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".hero",
+          start: "bottom top",
+          end: "+=800", // 800px скролл для анимации перемещения
+          scrub: true,
+        },
+      })
+      .to(heroImgWrapper, {
+        y: distanceToTravel,
+        ease: "none",
+      });
+
+    // Когда доходим до начала линии - фиксируем позицию
+    ScrollTrigger.create({
+      trigger: ".spotlight",
+      start: "top+=200 center", // Начинаем фиксировать когда spotlight чуть появился
+      end: "top top",
+      scrub: true,
+      onUpdate: (self) => {
+        // Фиксируем изображение в позиции начала SVG пути
+        gsap.set(heroImgWrapper, {
+          position: "absolute",
+          top: "20svh", // Позиция совпадает с top: 20svh у .svg-path
+          left: "50%",
+          transform: "translateX(-50%)",
+          y: 0,
+        });
       },
     });
   }
