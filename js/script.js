@@ -109,9 +109,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Анимация фоновых декоративных элементов при скролле
   const bgDecorations = document.querySelectorAll(".bg-decoration");
   bgDecorations.forEach((decoration, index) => {
-    const speed = 0.1 + (index * 0.05); // Разная скорость для параллакс эффекта
+    const speed = 0.3 + (index * 0.15); // Увеличенная скорость для параллакс эффекта
     gsap.to(decoration, {
-      y: -100 * speed,
+      y: -300 * speed,
       ease: "none",
       scrollTrigger: {
         trigger: ".spotlight",
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const decorations = document.querySelectorAll(".decoration");
   decorations.forEach((decoration) => {
     gsap.to(decoration, {
-      y: -50,
+      y: -200,
       ease: "none",
       scrollTrigger: {
         trigger: ".spotlight",
