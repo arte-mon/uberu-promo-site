@@ -145,6 +145,26 @@ h3 {
   overflow: hidden;
 }
 
+.hero-img-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  z-index: 10;
+  will-change: transform, y;
+}
+
+.hero-img-wrapper .img {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .hero-img-wrapper {
+    width: 50%;
+  }
+}
+
 .hero h1,
 .outro h1 {
   width: 100%;
