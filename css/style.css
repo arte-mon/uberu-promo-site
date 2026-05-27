@@ -20,6 +20,17 @@
   --text-style: clamp(12px, 2vw, 14px);
 }
 
+@font-face {
+  font-family: "Averta";
+  src:
+    url("../fonts/AvertaCyrillic/AvertaCyrillicRegular.otf") format("opentype"),
+    url("../fonts/AvertaCyrillic/AvertaCyrillicSemiBold.otf") format("opentype"),
+    url("../fonts/AvertaCyrillic/AvertaCyrillicBold.otf") format("opentype"),
+    url("../fonts/AvertaCyrillic/AvertaCyrillicExtraBold.otf")
+      format("opentype"),
+    url("../fonts/AvertaCyrillic/AvertaCyrillicBlack.otf") format("opentype");
+}
+
 /*  */
 /* ОБЩИЕ */
 html {
@@ -73,7 +84,7 @@ button {
 }
 
 .descr-title {
-  font-family: "Unbounded", serif;
+  font-family: "Averta", serif;
   font-weight: 600;
   text-transform: uppercase;
   font-size: var(--h2-font-size);
@@ -87,7 +98,7 @@ button {
 }
 
 body {
-  font-family: "Unbounded", sans-serif;
+  font-family: "Averta", sans-serif;
   font-weight: 400;
   font-size: var(--text-style);
   line-height: 1.4;
